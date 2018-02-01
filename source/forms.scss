@@ -1,0 +1,165 @@
+//GRIVITY FORMS STYLES
+$gform-width: 100%;//width of entire form
+$gfield-width:100%; //width of fields
+$gform-button-width:100%;
+$gform-padding:0px;//padding surrounding entire form
+$gfield-padding: 15px 0; //space between fields
+$ginput-border: 1px solid rgba(69, 69, 69, 0.5);//border for input boxes
+$gborder-radius:4px;//border radius of inputs and text area
+$ginput-padding: 8px; //padding within inputs
+$gfield-complex-padding: 5px 0px; //space between fields within fields
+$glabel-spacing: 5px;//space between label and it's corresponding field
+$gfield-text-size:1rem;//text size
+$gform-text-color:rgb(69, 69, 69);//text color
+$gfield-calendar-color:rgb(243, 243, 243);
+
+// Validation styles
+$gfield-validation-border:1px solid rgb(255, 0, 0);
+$gfield-validation-bgColor:rgb(255, 224, 229);
+$gfield-validations-textColor:rgb(255, 0, 0);
+
+
+.gform_wrapper {
+    padding: $gform-padding;
+    color: $gform-text-color;
+    font-size: $gfield-text-size;
+    width: $gform-width;
+    ul {
+        padding: 0;
+        li {
+            list-style-type: none;
+        }
+    }
+    
+    //FORM HEADING
+    .gform_heading {}
+
+    //FORM BODY
+    .gform_body {
+        .gfield_error{
+            input[aria-required="true"],
+            input[type="file"],
+            input,
+            select[aria-required="true"],
+            .datepicker {
+                background-color: $gfield-validation-bgColor;
+                border: $gfield-validation-border;
+            }
+        }
+        .validation_message{
+            color: $gfield-validations-textColor;
+        }
+        select {
+            margin-top: $glabel-spacing;
+            border: $ginput-border;
+        }
+        textarea {
+            border: $ginput-border;
+            border-radius: $gborder-radius;
+            padding: $ginput-padding;
+            width: $gfield-width;
+            box-sizing: border-box;
+            font-size: $gfield-text-size;
+            margin-top:$glabel-spacing;
+        }
+        input {
+            border: $ginput-border;
+            border-radius: $gborder-radius;
+            padding: $ginput-padding;
+            box-sizing: border-box;
+            font-size: $gfield-text-size;
+            margin-top:$glabel-spacing;
+        }
+        input:not([type="checkbox"]) {
+            width: $gfield-width;
+        }
+        .ginput_container_list{
+            width: $gfield-width;
+            input{
+                width: 100%;
+            }
+            table{
+                width: 100%;
+                tr td:last-child {
+                    width: 1%;
+                    white-space: nowrap;
+                    img{
+                        padding-left: 8px;
+                    }
+                }
+            }
+        }
+        
+        .gfield {
+            padding: $gfield-padding;
+        }
+        .gfield_checkbox {
+            li {
+                display: inline;
+            }
+        }
+        .ginput_complex {
+            span {
+                display: block;
+                padding: $gfield-complex-padding;
+            }
+        }
+        .ginput_container_select, .address_country {
+            select{
+            -moz-appearance: none;
+            -webkit-appearance: none;
+            padding: $ginput-padding;
+            border-radius: $gborder-radius;
+            width: $gfield-width;
+            background-image: url('https://image.flaticon.com/icons/svg/118/118738.svg');
+            background-repeat: no-repeat;
+            background-position: bottom 50% right 1%;
+            background-size: $gfield-text-size;
+            }
+
+        }
+        .gfield_list_cell{
+            padding: 0;
+        }
+        
+        .ginput_container_name,
+        .ginput_container_address{
+            label{
+                display: block;
+            }
+        }
+    }
+    // FORM FOOTER
+    .gform_footer {
+        // form button
+        .gform_button{
+            width: $gform-button-width;
+           
+        }
+    }
+}
+// DATEPICKER CALENDAR STYLES 
+.ui-datepicker {
+    .ui-datepicker-header {
+        background-color: $gfield-calendar-color;
+        padding: 2px 5px;
+        span {
+            padding-right: 15px;
+        }
+        // select {
+        //     -moz-appearance: none;
+        //     -webkit-appearance: none;
+        //     padding: 3px;
+        //     border-radius:20px;
+        //     width: 40%;
+        //     background-image: url('https://image.flaticon.com/icons/svg/118/118738.svg');
+        //     background-repeat: no-repeat;
+        //     background-position: bottom 50% right 1%;
+        //     background-size: 12px;
+        // }
+    }
+    .ui-datepicker-calendar {
+        background-color: $gfield-calendar-color;
+        padding: 2px 5px;
+    }
+}

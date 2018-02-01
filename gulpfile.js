@@ -23,6 +23,7 @@ gulp.task('styles', function () {
     .pipe(livereload());
 });
 
+
 // Task scripts
 gulp.task('scripts', function() {
   gulp.src('js/source/*.js')

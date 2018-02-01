@@ -1,0 +1,22 @@
+// HOMEPAGE
+.home-title {
+    font-size: 50px;
+    letter-spacing: 25px;
+}
+.featured-albums {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+}
+
+.featured-album {
+    &:hover {
+        filter: blur(100%); // opacity: .7;
+    }
+}
+.description {
+    width: 100%;
+    text-align: center;
+    padding: 20px 0px;
+}

@@ -1,0 +1,59 @@
+// SINGLE ALBUM
+.wrapper {
+    display: flex;
+    justify-content: space-around;
+}
+
+.single-artist {
+    text-align: center;
+    padding-bottom: 3%;
+    h1,
+    h2,
+    h3 {
+        margin: 0;
+    }
+}
+
+.single-album-title {
+    letter-spacing: 10px;
+    font-size: 40px;
+}
+
+.single-right {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    ;
+    .bioPic {
+        width: 300px;
+        height: 300px;
+        margin-top: 10%;
+    }
+    p {
+        margin: 0;
+    }
+}
+
+.single-left {
+    width: 30%;
+}
+
+.track {
+    padding-bottom: 10px;
+    width: 48%;
+}
+
+.tracks {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 50%;
+    box-sizing: border-box;
+    max-height: 350px;
+}
+
+.single-page-track {
+    width: 100%;
+    flex-wrap: nowrap;
+}

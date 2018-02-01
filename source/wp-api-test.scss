@@ -1,0 +1,33 @@
+// WP API TEST PAGE
+#wp-api-btn {
+    text-align: center;
+    margin: auto;
+    background-color: orange;
+    color: white;
+    width: 100px;
+    padding: 5px;
+    display: block;
+    margin: 0 auto;
+    &:hover {
+        background-color: red; //border:1px solid grey;
+        color: white;
+    }
+}
+
+#yerp {
+    text-align: center;
+}
+
+.album-title-test {
+    margin-top: 3%;
+}
+
+.buttons-div {
+    width: 50%;
+    margin: auto;
+    text-align: center; // background-color: yellow;
+}
+
+.page-id-226 {
+    //background-color: #353535;
+}
