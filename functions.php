@@ -15,11 +15,13 @@ add_action('wp_enqueue_scripts', 'shapeSpace_include_custom_jquery');
 // Scripts and Such
 function musicAndSuch_script_enqueue(){
     wp_enqueue_style('load-fa', 'https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css');
-    //wp_enqueue_style('pretty-checkbox', 'https://cdn.jsdelivr.net/npm/pretty-checkbox@3.0/dist/pretty-checkbox.min.css');
+    wp_enqueue_style('owl carousel', get_template_directory_uri() . '/node_modules/owl.carousel/dist/assets/owl.carousel.css',[], '2.3.0', 'all');
+    wp_enqueue_style('owl theme', get_template_directory_uri() . '/node_modules/owl.carousel/dist/assets/owl.theme.default.css',[], '2.3.0', 'all');
     wp_enqueue_style('customstyles', get_template_directory_uri() . '/source/style.css', [], '1.0.0', 'all' );
     wp_enqueue_style('lightbox', get_template_directory_uri() . '/source/lightbox.css', [], '1.0.0', 'all' );
     wp_enqueue_style('lityCSS', get_template_directory_uri() . '/source/lity.css', [], '1.0.0', 'all' );
     //wp_enqueue_script('youtubeApi', 'https://apis.google.com/js/client.js');
+    wp_enqueue_script('owl js', get_template_directory_uri() . '/node_modules/owl.carousel/dist/owl.carousel.js', [], '1.0.0', true );
     wp_enqueue_script('lightboxJS', get_template_directory_uri() . '/js/lightbox.js', [], '1.0.0', true );
     wp_enqueue_script('lityJS', get_template_directory_uri() . '/js/lity.js', [], '1.0.0', true );
     wp_enqueue_script('axios', 'https://unpkg.com/axios/dist/axios.min.js', [], '1.0.0', true );

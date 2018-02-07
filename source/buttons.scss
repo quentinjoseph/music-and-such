@@ -1,12 +1,12 @@
 // Buttons
 //button variables
 //$btn-display:inline-block;
-$btn-font-size:1rem;
+$btn-font-size: 10px;
 $btn-padding: 5px 20px;
-$btn-radius: 0;
+$btn-radius: 20px;
 $btn-transition: .25s;
 $btn-border: none;
-$btn-shadow:0px 3px 5px 0px rgba(0, 0, 0, 0.05);
+$btn-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.05);
 $btn-font: "Open Sans";
 //primary button colors
 $btn-bg-color-primary: #fa8d33;
@@ -21,40 +21,40 @@ $btn-text-hover-color-secondary: white;
 // rules
 .btn,
 .button {
-    outline: none;
-    box-sizing: border-box;
-    box-shadow: $btn-shadow;
-    text-align: center;
-    display: inline-block;
-    text-transform: uppercase;
-    padding: $btn-padding;
-    border-radius: $btn-radius;
-    transition: $btn-transition;
-    border: $btn-border;
-    font-family: $btn-font;
-    font-size: $btn-font-size;
-    margin-bottom: 5px;
-    &.primary {
-        background: $btn-bg-color-primary;
-        color: $btn-text-color-primary;
-        &:hover {
-            background: $btn-hover-bg-color-primary;
-            color: $btn-text-hover-color-primary;
-        }
+  outline: none;
+  box-sizing: border-box;
+  box-shadow: $btn-shadow;
+  text-align: center;
+  display: inline-block;
+  text-transform: uppercase;
+  padding: $btn-padding;
+  border-radius: $btn-radius;
+  transition: $btn-transition;
+  border: $btn-border;
+  font-family: $btn-font;
+  font-size: $btn-font-size;
+  margin-bottom: 5px;
+  &.primary {
+    background: $btn-bg-color-primary;
+    color: $btn-text-color-primary;
+    &:hover {
+      background: $btn-hover-bg-color-primary;
+      color: $btn-text-hover-color-primary;
     }
-    &.secondary {
-        background: $btn-bg-color-secondary;
-        color: $btn-text-color-secondary2;
-        &:hover {
-            background: $btn-hover-bg-color-secondary;
-            color: $btn-text-hover-color-secondary;
-        }
+  }
+  &.secondary {
+    background: $btn-bg-color-secondary;
+    color: $btn-text-color-secondary2;
+    &:hover {
+      background: $btn-hover-bg-color-secondary;
+      color: $btn-text-hover-color-secondary;
     }
-    &.full {
-        display: block;
-        width: 100%;
-    }
-    &.center {
-        margin: 0 auto;
-    }
+  }
+  &.full {
+    display: block;
+    width: 100%;
+  }
+  &.center {
+    margin: 0 auto;
+  }
 }

@@ -10,7 +10,7 @@
     $posts = get_field('featured_albums');
     // print_r($posts);
     if( $posts ): ?>
-        <div class="featured-albums">
+        <div class="featured-albums owl-carousel owl-theme">
         <?php foreach( $posts as $post): // variable must be called $post (IMPORTANT) ?>
             <div class="featured-album">
                 <?php setup_postdata($post); ?>
