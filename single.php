@@ -12,7 +12,7 @@
       $bioSearch = file_get_contents('http://ws.audioscrobbler.com/2.0/?method=artist.getinfo&artist=' . $artistURLd . '&api_key=c3b254cd58b275bf0538636f72970a49&format=json');
       $albumSearch = file_get_contents('http://ws.audioscrobbler.com/2.0/?method=album.getinfo&api_key=c3b254cd58b275bf0538636f72970a49&artist=' . $artistURLd . '&album=' . $titleURLd . '&format=json');
       $tracksAndSuch = json_decode($albumSearch, true);
-      //print_r($tracksAndSuch);
+      print_r($tracksAndSuch);
 
       //print_r($bioSearch);
       $summary = array_key_exists('wiki', $tracksAndSuch['album']) ? $tracksAndSuch['album']['wiki']['summary'] : '';
